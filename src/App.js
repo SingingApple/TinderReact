@@ -9,12 +9,14 @@ const App = () => {
     <div className="App">
       <Router>
         {/* Header */}
-        <Header />
+
         <Switch>
           <Route exact path="/chat">
-            I am the chat page
+            <Header backButton="/" />
+            <h1>I</h1>
           </Route>
           <Route exact path="/">
+            <Header />
             <TinderCards></TinderCards>
             <SwipeButton />
           </Route>
